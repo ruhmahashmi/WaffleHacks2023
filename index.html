@@ -3,6 +3,7 @@
 <head>
   <title>Student Food Insecurity</title>
   <link rel="stylesheet" type="text/css" href="commonstyle.css">
+  <link rel="stylesheet" type="text/css" href="header.css" class="header-styles">
   <link rel="stylesheet" type="text/css" href="advice.css" class="advice-styles">
   <link rel="stylesheet" type="text/css" href="nourish.css" class="home-styles">
   <link rel="stylesheet" type="text/css" href="planner.css" class="meal-planner-styles">
@@ -14,15 +15,25 @@
     <h1>nourishED</h1>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home">Nutrition Analysis</a></li>
         <li><a href="#advice">Advice</a></li>
         <li><a href="#meal-tracker">Meal Tracker</a></li>
-        <li><a href="#meal-planner">Meal Planner</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#to-do">To-Do List</a></li>
       </ul>
     </nav>
   </header>
 
+ <section id="hero">
+  <div class="hero-text">
+    <h1>Welcome to nourishED!</h1>
+    <p>Fueling Student Success with Healthy Eating and Food Security Solutions. <br> Through our all-in-one platform discover the nutritional value of foods, access cooking and meal planning tips and track meals.</p>
+  </div>
+  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmtxeHlzOGk5Zzh0N3RrMDFxeTFwNmxja2E4ZGRyOTN2bmExdDFkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IJlBi94ro3OTbq/giphy.gif" alt="Animated Hero Image">
+</section>
+
+
+  <br>
+  
   <section id="home">
     <h1 class="title">Food Nutrition Search</h1>
     <h2 class="subtitle">are you eating healthy?</h2>
@@ -38,24 +49,24 @@
     
 <section id="advice">
 <div class="advice-section">
-  <h2>nourishED's Advice Section</h2>
+  <h2 class= advicetitle>nourishED's Advice Section</h2>
   <div class="advice-container">
     <div class="advice-column" onclick="openModal(1)">
       <h3>Smart Meal Planning</h3>
       <div class="advice-image">
-        <img src="meal-planning-image.jpg" alt="Smart Meal Planning">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVmRUjboVuWECnYF1YUnVsriZb_j-y8vz1sQ&usqp=CAU" alt="Smart Meal Planning">
       </div>
     </div>
     <div class="advice-column" onclick="openModal(2)">
-      <h3>Budget Friendly Recipes</h3>
+      <h3>Budget Friendly Ideas</h3>
       <div class="advice-image">
-        <img src="recipe.jpg" alt="budget friendly recipe">
+        <img src="https://t0.gstatic.com/images?q=tbn:ANd9GcTa60JW7fVv8OoPYK5HRtg0hjLGipoJgWD0STuR8rYjCpeEef-X"alt="budget friendly recipe">
       </div>
     </div>
     <div class="advice-column" onclick="openModal(3)">
       <h3>Cooking Tips</h3>
       <div class="advice-image">
-        <img src="meal-planning-image.jpg" alt="Smart Meal Planning">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Z9ATNqXUatzxB8oYJJ45NDSh5VXjPMl_6w&usqp=CAU" alt="cooking tips">
       </div>
   </div>
   <div id="modal" class="modal">
@@ -80,34 +91,17 @@
 
 
 
- <section id="meal-planner">
-  <h2>Weekly Meal Planner</h2>
-  <div id="calendar">
-    <h3>Meal Plan</h3>
-    <div id="meal-plan"></div>
-  </div>
-  <div id="grocery-list">
-    <h3>Grocery List</h3>
-    <ul id="grocery-items"></ul>
-  </div>
-  <div id="to-do-list">
-    <h3>To-Do List</h3>
+ <section id="to-do">
+  <h2>To-Do List</h2>
     <ul id="to-do-items"></ul>
     <input type="text" id="todo-input" placeholder="Add a task...">
     <button id="todo-button">Add</button>
   </div>
    <script src="planner.js" defer></script>
 </section>
-
-
-
-  <section id="about">
-    <h2>About Us</h2>
-    <!-- Add information about the website and the organization behind it -->
-  </section>
-
+ <br> 
   <footer>
-    <p>&copy; 2023 Student Food Insecurity</p>
+    <p>&copy; Student Food Insecurity website by Ruhma Hashmi</p>
   </footer>
 </body>
 </html>

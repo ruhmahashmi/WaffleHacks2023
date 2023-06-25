@@ -2,6 +2,8 @@
 .advice-section {
   margin-top: 20px;
   padding: 20px;
+  background-color: #3c5c5e;
+  border-radius: 10px;
 }
 
 .advice-container {
@@ -16,21 +18,23 @@
   cursor: pointer;
   position: relative;
   padding: 20px;
-  background-color: #FFEDDA;
+  background-color: #eedea5;
   border-radius: 10px;
   text-align: center;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .advice-column:hover {
-  background-color: #FFC3A0;
+  background-color: #f3d8cb;
 }
 
 .advice-column h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #87563F;
+  color: #593d35;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .advice-column ul {
@@ -39,7 +43,7 @@
 
 .advice-column li {
   margin-bottom: 5px;
-  color: #333;
+  color: #594e45;
 }
 
 .advice-image {
@@ -49,6 +53,7 @@
 .advice-image img {
   width: 100%;
   height: auto;
+  border-radius: 6px;
 }
 
 .modal {
@@ -60,7 +65,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-content {
@@ -68,11 +73,13 @@
   margin: 10% auto;
   padding: 20px;
   max-width: 500px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .modal-content p {
   margin-bottom: 10px;
-  color: #333;
+  color: #594e45;
 }
 
 .close-btn {
@@ -81,12 +88,18 @@
   float: right;
   font-size: 18px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .close-btn:hover {
-  color: #000;
+  color: #593d35;
 }
 
 #meal-form {
+  margin-bottom: 20px;
+}
+.advicetitle {
+  color: #eedea5;
+  font-size: 24px;
   margin-bottom: 20px;
 }

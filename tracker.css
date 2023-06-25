@@ -1,54 +1,89 @@
+/* Meal Tracker Section */
+#meal-tracker {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+#meal-tracker h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3c5c5e;
+}
+
+#meal-form {
+  margin-bottom: 20px;
+}
+
+#meal-form label {
+  font-size: 16px;
+  color: #3c5c5e;
+  margin-bottom: 5px;
+}
+
+#meal-form input[type="text"],
+#meal-form input[type="time"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #594e45;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#meal-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3c5c5e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#meal-form button:hover {
+  background-color: #3c5c5e;
+}
+
 #meal-list {
-  display: grid;
-  grid-gap: 10px;
+  margin-top: 20px;
 }
 
 .meal-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 10px;
-  background-color: #F0F0F0;
-  border-radius: 5px;
-}
-
-.meal-item .meal-name {
-  flex-grow: 1;
-  margin-right: 10px;
-  font-size: 18px;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
-
-.meal-item .meal-time {
-  flex-basis: 100px;
+  background-color: #FFEDDA;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  color: #594e45;
   font-size: 16px;
-  color: #888;
-  font-family: 'Arial', sans-serif;
+  line-height: 1.4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #947251;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
-  font-family: 'Arial', sans-serif;
+.meal-item:last-child {
+  margin-bottom: 0;
 }
 
-input[type="text"],
-input[type="time"] {
-  padding: 8px;
-  font-size: 16px;
-  border: 1px solid #CCC;
-  border-radius: 5px;
-  font-family: 'Arial', sans-serif;
-}
+/* Responsive Styling */
+@media (max-width: 768px) {
+  #meal-form input[type="text"],
+  #meal-form input[type="time"] {
+    font-size: 14px;
+  }
 
-input[type="text"]::placeholder,
-input[type="time"]::placeholder {
-  color: #888;
-  font-family: 'Arial', sans-serif;
+  #meal-form button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .meal-item {
+    font-size: 14px;
+  }
 }
