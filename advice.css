@@ -1,0 +1,92 @@
+/* Advice Section */
+.advice-section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.advice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advice-column {
+  width: 23%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+  background-color: #FFEDDA;
+  border-radius: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.advice-column:hover {
+  background-color: #FFC3A0;
+}
+
+.advice-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #87563F;
+}
+
+.advice-column ul {
+  padding-left: 20px;
+}
+
+.advice-column li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.advice-image {
+  margin-bottom: 10px;
+}
+
+.advice-image img {
+  width: 100%;
+  height: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.modal-content p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.close-btn {
+  cursor: pointer;
+  color: #888;
+  float: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+#meal-form {
+  margin-bottom: 20px;
+}

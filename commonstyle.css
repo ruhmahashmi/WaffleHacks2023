@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e5bba9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  font-family: 'Fredoka One', cursive;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  color: #87563F;
+}
+
+/* Home Section */
+#home {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#generatedText {
+  margin-top: 20px;
+}
+
+/* Food Search Section */
+#search {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#result {
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #EFCFC5;
+  padding: 10px;
+}
+
+/* Resources Section */
+#resources {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Meal Exchange Section */
+#exchange {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Volunteer Section */
+#volunteer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #F5D0C1;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+

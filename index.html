@@ -1,23 +1,114 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Student Food Insecurity</title>
+  <link rel="stylesheet" type="text/css" href="commonstyle.css">
+  <link rel="stylesheet" type="text/css" href="advice.css" class="advice-styles">
+  <link rel="stylesheet" type="text/css" href="nourish.css" class="home-styles">
+  <link rel="stylesheet" type="text/css" href="planner.css" class="meal-planner-styles">
+  <link rel="stylesheet" type="text/css" href="tracker.css" class="meal-tracker-styles">
+  
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <header>
+    <h1>nourishED</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#advice">Advice</a></li>
+        <li><a href="#meal-tracker">Meal Tracker</a></li>
+        <li><a href="#meal-planner">Meal Planner</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <section id="home">
+    <h1 class="title">Food Nutrition Search</h1>
+    <h2 class="subtitle">are you eating healthy?</h2>
+    <form id="search" name="search">
+      <input name="name" placeholder="Type a food or a meal...">
+      <button type="submit">SEARCH</button>
+    </form>
+  </header>
+  <section>
+    <div id="result"></div>
+  <script src="nourish.js" defer></script>
+</section>
+    
+<section id="advice">
+<div class="advice-section">
+  <h2>nourishED's Advice Section</h2>
+  <div class="advice-container">
+    <div class="advice-column" onclick="openModal(1)">
+      <h3>Smart Meal Planning</h3>
+      <div class="advice-image">
+        <img src="meal-planning-image.jpg" alt="Smart Meal Planning">
+      </div>
+    </div>
+    <div class="advice-column" onclick="openModal(2)">
+      <h3>Budget Friendly Recipes</h3>
+      <div class="advice-image">
+        <img src="recipe.jpg" alt="budget friendly recipe">
+      </div>
+    </div>
+    <div class="advice-column" onclick="openModal(3)">
+      <h3>Cooking Tips</h3>
+      <div class="advice-image">
+        <img src="meal-planning-image.jpg" alt="Smart Meal Planning">
+      </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+</div>
+  <script src="advice.js" defer></script>
+  </section>
+
+  <section id="meal-tracker">
+  <h2>Meal Tracker</h2>
+  <div id="meal-form">
+    <label for="meal-name">Meal Name:</label>
+    <input type="text" id="meal-name" placeholder="Enter meal name">
+    <label for="meal-time">Meal Time:</label>
+    <input type="time" id="meal-time">
+    <button onclick="addMeal()">Add Meal</button>
+  </div>
+  <div id="meal-list"></div>
+    <script src="tracker.js" defer></script>
+</section>
+
+
+
+ <section id="meal-planner">
+  <h2>Weekly Meal Planner</h2>
+  <div id="calendar">
+    <h3>Meal Plan</h3>
+    <div id="meal-plan"></div>
+  </div>
+  <div id="grocery-list">
+    <h3>Grocery List</h3>
+    <ul id="grocery-items"></ul>
+  </div>
+  <div id="to-do-list">
+    <h3>To-Do List</h3>
+    <ul id="to-do-items"></ul>
+    <input type="text" id="todo-input" placeholder="Add a task...">
+    <button id="todo-button">Add</button>
+  </div>
+   <script src="planner.js" defer></script>
+</section>
+
+
+
+  <section id="about">
+    <h2>About Us</h2>
+    <!-- Add information about the website and the organization behind it -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Student Food Insecurity</p>
+  </footer>
 </body>
-
 </html>
+
