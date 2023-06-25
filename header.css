@@ -1,6 +1,12 @@
+
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
   background-color: #3c5c5e;
-  padding: 20px;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
